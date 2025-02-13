@@ -1,0 +1,68 @@
+# Adjust window appearance
+[ window ]
+opacity = 1
+decorations = "full"
+padding.x = 5
+padding.y = 5
+
+# Set font & size
+[font]
+size = 12
+
+# Font family and style
+[font.normal]
+family = "Input Mono"
+style = "Regular"
+
+# Kerning, basically
+[font.offset]
+x = 1
+y = 0
+
+
+# Define colors
+[colors.primary]
+background = "#10141f" # 222232 
+foreground = "#C2E0F9"
+
+# Selection colors (when text is highlighted)
+[colors.selection]
+background = "#323353"
+text = "#F5E663"
+
+[colors.normal]
+black = "#2e222f"
+red     = "#ea4f36"
+green   = "#165a4c"
+yellow  = "#fbff86"
+blue    = "#4d9be6"
+magenta = "#eaaded"
+cyan    = "#4d9be6"
+white   = "#ffffff"
+
+# Bright colors (used in bold text)
+[colors.bright]
+black   = "#3e3546"
+red     = "#e83b3b"
+green   = "#91db69"
+yellow  = "#fbff86"
+blue    = "#8fd3ff"
+magenta = "#831c5d"
+cyan    = "#8fd3ff"
+white   = "#ffffff"
+
+
+# Increase history from 10,000 to 100,000
+[scrolling]
+history = 100000
+
+[cursor]
+style = "Block" # Options: Block, Underline, Beam
+
+[keyboard]
+bindings = [
+    { key = "V", mods = "Control|Shift", action = "Paste" },
+    { key = "C", mods = "Control|Shift", action = "Copy" },
+    { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" },
+    { key = "F11", action = "ToggleFullscreen" }
+]
